@@ -11,8 +11,9 @@
   <script src="script.js" defer> </script>
 </head>
 
-<body class="flex content-center justify-center flex-col min-h-screen text-black bg-[url('src/images/topography.svg')] min-w-60">
-<!-- //if i want to use a custom svg code, i should maybe import it in an inline style or with a file extended in tailwind config file but 
+<body class="flex content-center justify-center flex-col min-h-screen bg-gradient-to-bl from-fuchsia-100 via-violet-200 via-20% to-pink-300 text-black  min-w-60">
+<!-- custom bg img : bg-[url('src/images/topography2.svg')]
+	//if i want to use a custom svg code, i should maybe import it in an inline style or with a file extended in tailwind config file but 
 I'm currently not using npm instll taiilwind cause I don't want to work with react for this simple project -->
 
 	
@@ -20,7 +21,7 @@ I'm currently not using npm instll taiilwind cause I don't want to work with rea
 		<!-- /*min-h-500*/  -->
 		<div class="hero-content text-center z-5">
 			<div class="max-w-md">
-				<h1 class="glass text-5xl font-bold bg-transparent z-40 bg-svg-wheels bg-no-repeat bg-cover bg-center bg-fixed min-h-100">	Laure Seng 
+				<h1 class="text-5xl font-bold bg-transparent z-40 bg-svg-wheels bg-no-repeat bg-cover bg-center bg-fixed min-h-100">	Laure Seng 
 				</h1>
 				<p class="py-6">Développeuse web fullstack PHP</p>
 				<button class="btn btn-primary">Contact me !</button>
@@ -30,28 +31,29 @@ I'm currently not using npm instll taiilwind cause I don't want to work with rea
 	</div>
 <!-- //Carousel -->
 
-<div class="h-96 carousel carousel-vertical rounded-box mx-auto object-contain">
-	<div class="carousel-item h-full">
-	  <img src="/src/images/Avatars/I love the internet.png" class="min-w-64"/>
-	  <h2>coucouc</h2>
+<div class="h-96 carousel carousel-vertical rounded-box  mx-auto my-10 max-w-96 border-4 border-pink-100 rounded
+">
+	<div class="carousel-item h-full bg-fuschia-100">
+	  <img src="src/images/avatars/internet.png" class=""/>
+	  <!-- <h2>coucouc</h2> -->
 	</div> 
 	<div class="carousel-item h-full">
-	  <img src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg" />
+	  <img src="src/images/avatars/laptop.png" />
 	</div> 
 	<div class="carousel-item h-full">
-	  <img src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" />
+	  <img src="src/images/avatars/perseverance.png" />
 	</div> 
 	<div class="carousel-item h-full">
-	  <img src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" />
+	  <img src="src/images/avatars/studying.png" />
 	</div> 
 	<div class="carousel-item h-full">
-	  <img src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" />
+	  <img src="src/images/avatars/serenade.png" />
 	</div> 
 	<div class="carousel-item h-full">
-	  <img src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" />
+	  <img src="src/images/avatars/pasteque.png" />
 	</div> 
 	<div class="carousel-item h-full">
-	  <img src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" />
+	  <img src="src/images/avatars/velo.png" />
 	</div>
   </div>
 
