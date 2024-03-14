@@ -1,106 +1,13 @@
 <!doctype html>
-<html data-theme="cupcake">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <title>lorlor31.github.io</title> 
-  <script src="script.js" defer> </script>
-</head>
-
-<body class="flex content-center justify-center flex-col min-h-screen bg-gradient-to-bl from-fuchsia-100 via-violet-200 via-20% to-pink-300 text-black  min-w-60">
-<!-- custom bg img : bg-[url('src/images/topography2.svg')]
-	//if i want to use a custom svg code, i should maybe import it in an inline style or with a file extended in tailwind config file but 
-I'm currently not using npm instll taiilwind cause I don't want to work with react for this simple project -->
-
-	
-	<div class="hero "> 
-		<!-- /*min-h-500*/  -->
-		<div class="hero-content text-center z-5">
-			<div class="max-w-md">
-				<h1 class="text-5xl font-bold bg-transparent z-40 bg-svg-wheels bg-no-repeat bg-cover bg-center bg-fixed min-h-100">	Laure Seng 
-				</h1>
-				<p class="py-6">Développeuse web fullstack PHP</p>
-				<button class="btn btn-primary">Contact me !</button>
-			</div>
-		</div>
-		
-	</div>
-<!-- //Carousel -->
-
-<div class="h-96 carousel carousel-vertical rounded-box  mx-auto my-10 max-w-96 border-4 border-pink-100 rounded
-">
-	<div class="carousel-item h-full bg-fuschia-100">
-	  <img src="src/images/avatars/internet.png" class=""/>
-	  <!-- <h2>coucouc</h2> -->
-	</div> 
-	<div class="carousel-item h-full">
-	  <img src="src/images/avatars/laptop.png" />
-	</div> 
-	<div class="carousel-item h-full">
-	  <img src="src/images/avatars/perseverance.png" />
-	</div> 
-	<div class="carousel-item h-full">
-	  <img src="src/images/avatars/studying.png" />
-	</div> 
-	<div class="carousel-item h-full">
-	  <img src="src/images/avatars/serenade.png" />
-	</div> 
-	<div class="carousel-item h-full">
-	  <img src="src/images/avatars/pasteque.png" />
-	</div> 
-	<div class="carousel-item h-full">
-	  <img src="src/images/avatars/velo.png" />
-	</div>
-  </div>
-
-	
-	<div class="mockup-code max-w-64 self-center my-5 min-h-32">
-		<pre data-prefix="$"><code>npm i laure-seng-bundle</code></pre> 
-		<pre data-prefix=">" class="text-warning"><code>installing good vibes...</code></pre> 
-		<pre data-prefix=">" class="text-success"><code>Great !</code></pre>
-	</div>
-
-
-
-<div class="flex content-center flex-row justify-around m-6 " id="projects-wrapper">
-	<article class="card w-96 bg-base-100 shadow-xl">
-		<figure><img src="https://picsum.photos/200/300" alt="Shoes" href="https://lorlor31.github.io/Memento/"/></figure>
-		<div class="card-body">
-			<h2 class="card-title">
-			<a href="https://lorlor31.github.io/Memento/">Memento</a>
-				<div class="badge badge-success text-neutral-content">NEW</div>
-			</h2>
-			<p>Tous les trucs dont je dois me rappeler 🤯</p>
-			<div class="card-actions justify-end">
-				<div class="badge badge-outline bg-primary">HTML</div> 
-				<div class="badge badge-outline  bg-secondary">CSS</div>
-				<div class="badge badge-outline  bg-accent">JS</div>
-			</div>
-		</div>
-	</article>
-
-	<article class="card w-96 bg-base-100 shadow-xl">
-		<figure><img src="https://picsum.photos/200/300" alt="Shoes" href="https://lorlor31.github.io/Advent-Calendar/" /></figure>
-		<div class="card-body">
-			<h2 class="card-title">
-				<a href="https://lorlor31.github.io/Advent-Calendar/">Advent Calendar</a>
-				<div class="badge badge-success text-neutral-content">OLD</div>
-			</h2>
-			<p>Apprennez et riez autour de Noël</p> 
-			<div class="card-actions justify-end">
-				<div class="badge badge-outline bg-primary">HTML</div> 
-				<div class="badge badge-outline  bg-secondary">CSS</div>
-				<div class="badge badge-outline  bg-accent">JS</div>
-			</div>
-		</div>
-	</article>
-</div>
-
-
-
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lorlor31.github.io</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

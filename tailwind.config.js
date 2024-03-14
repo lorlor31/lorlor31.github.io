@@ -1,22 +1,20 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{html,js}"],
+export default {
+ content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx,css}",
+  ],
   theme: {
     extend: {
       backgroundImage: {
-        // 'svg-wheels': "url('/images/floating-cogs.svg')",
-        'svg-wheels': "url('https://picsum.photos/200/300')",
-
-        
-        // 'footer-texture': "url('/img/footer-texture.png')",
+        'roues': "url('src/images/roues.svg')",
+        'x': "url('/img/')",
       }
-      
 
     },
   },
-  plugins: [],
-  daisyui: {
-    themes: ["cyberpunk", "dark"],
-  },
+  plugins: [require("daisyui"),
+  require('tailwindcss-animated')]
+
 }
 
