@@ -11,60 +11,86 @@ return (
 	<div className="flex content-center justify-center flex-col min-h-screen bg-gradient-to-bl from-fuchsia-100 via-violet-200 via-20% to-pink-300 text-black  min-w-60">
 		<div className="hero ">
 			<div className="hero-content text-center z-5">
-				<div className="max-w-md">
-					<h1 className="text-5xl font-bold bg-transparent z-40 bg-svg-wheels bg-no-repeat bg-cover bg-center bg-fixed min-h-100 animate-fade-right animate-once animate-duration-500 animate-ease-in-out">	Laure Seng
+				<div className="relative max-w-md mix-blend-darken   ">
+
+					<h1 className="bg-gradient-to-br from-indigo-600 from-0% via-fuchsia-400 via-15% to-blue-900 inline-block text-transparent bg-clip-text text-7xl font-bold bg-transparent z-40 bg-svg-wheels bg-no-repeat bg-cover bg-center bg-fixed min-h-100 animate-fade-right animate-once animate-duration-500 animate-ease-in-out shadow-sm drop-shadow-2xl p-4 ">	Laure Seng
 					</h1>
-					<p className="py-6 animate-rotate-x animate-infinite animate-ease-in-out">Développeuse web </p>
-					<p className="py-6 bg-roues" > !! Site en construction !!</p>
+					<p className="py-6 animate-rotate-x animate-infinite animate-ease-in-out text-2xl">Développeuse web </p>
+					{/* <p className="animation-translateX-slow absolute min-w-full py-6 bg-roues text-white bg-red-700 border-4 border-white-900 border-dashed" > !! Site en construction !!</p> */}
 				</div>
 			</div>
 		</div>
 		{/* <!-- //Carousel --> */}
-
-		<div className="h-96 carousel carousel-vertical rounded-box my-0 max-w-3xl mx-auto  border-4 border-black">
-			<div className="carousel-item h-full bg-fuschia-100  mx-auto">
-					<div className="relative min-w-64" >
-						<img src="src/images/avatars/internet.png" className=" mx-auto absolute my-0 p-0 z-10 border-4  border-pink-100"/>
-					<div className="chat chat-start absolute left-48 top-12 min-w-full z-30">
-						<div className="chat-bubble chat-bubble-primary min-w-full">Bonjour ! Je suis Laure ! A votre service !</div>
+		{/* //TODO mettre des props pour factoriser */}
+		<div className="h-96 min-w-full carousel carousel-vertical rounded-box my-0 max-w-3xl mx-auto">
+			<div className="carousel-item bg-fuschia-100  mx-auto h-96  ">
+					<div className="relative min-w-96 h-96  " >
+						<img src="src/images/avatars/internet.png" className=" mx-auto my-auto absolute h-96  p-0 z-10 border-4  border-pink-100 object-contain	"/>
+						<div className="chat chat-start absolute left-72 top-12 overflow-visible z-30 min-w-full">
+						<div className="chat-bubble chat-bubble-primary min-w-full  ">Bonjour ! Je suis Laure ! A votre service !</div>
 					</div>
 					</div>
 			</div>
-			<div className="carousel-item h-full bg-fuschia-100  mx-auto">
-					<div className="relative min-w-64" >
-						<img src="src/images/avatars/laptop.png" className=" mx-auto absolute z-10 border-4  border-pink-100"/>
-					<div className="chat chat-start absolute left-48 top-12 min-w-full z-30">
-						<div className="chat-bubble chat-bubble-primary min-w-full">Bonjour ! Je suis Laure ! A votre service !</div>
+			<div className="carousel-item bg-fuschia-100  mx-auto h-96  ">
+					<div className="relative min-w-96 h-96  " >
+						<img src="src/images/avatars/laptop.png" className=" mx-auto my-auto absolute h-96  p-0 z-10 border-4  border-pink-100 object-contain	"/>
+						<div className="chat chat-start absolute left-72 top-12 overflow-visible z-30 min-w-full">
+						<div className="chat-bubble chat-bubble-primary min-w-full  ">J'aime les ordinateurs, je ne sais pas si c'est réciproque...</div>
 					</div>
 					</div>
 			</div>
-
-
-
-
-
-
-			<div className="carousel-item h-full">
-				<img src="src/images/avatars/laptop.png" />
+			<div className="carousel-item bg-fuschia-100  mx-auto h-96  ">
+					<div className="relative min-w-96 h-96  " >
+						<img src="src/images/avatars/studying.png" className=" mx-auto my-auto absolute h-96  p-0 z-10 border-4  border-pink-100 object-contain	"/>
+						<div className="chat chat-start absolute left-72 top-12 overflow-visible z-30 min-w-full">
+						<div className="chat-bubble chat-bubble-primary min-w-full  ">Je suis quelqu'un de sérieux et de travailleur.</div>
+					</div>
+					</div>
 			</div>
-			<div className="carousel-item h-full">
-				<img src="src/images/avatars/perseverance.png" />
+			<div className="carousel-item bg-fuschia-100  mx-auto h-96  ">
+					<div className="relative min-w-96 h-96  " >
+						<img src="src/images/avatars/trampoline.png" className=" mx-auto my-auto absolute h-96  p-0 z-10 border-4  border-pink-100 object-contain	"/>
+						<div className="chat chat-start absolute left-72 top-12 overflow-visible z-30 min-w-full">
+						<div className="chat-bubble chat-bubble-primary min-w-full  ">Mais il parait que je saute comme une puce ?!</div>
+					</div>
+					</div>
 			</div>
-			<div className="carousel-item h-full">
-				<img src="src/images/avatars/studying.png" />
+			<div className="carousel-item bg-fuschia-100  mx-auto h-96  ">
+					<div className="relative min-w-96 h-96  " >
+						<img src="src/images/avatars/velo.png" className=" mx-auto my-auto absolute h-96  p-0 z-10 border-4  border-pink-100 object-contain	"/>
+						<div className="chat chat-start absolute left-72 top-12 overflow-visible z-30 min-w-full">
+						<div className="chat-bubble chat-bubble-primary min-w-full  ">J'adore mon vélo et le réparer.</div>
+					</div>
+					</div>
 			</div>
-			<div className="carousel-item h-full">
-				<img src="src/images/avatars/serenade.png" />
+			<div className="carousel-item bg-fuschia-100  mx-auto h-96  ">
+					<div className="relative min-w-96 h-96  " >
+						<img src="src/images/avatars/serenade.png" className=" mx-auto my-auto absolute h-96  p-0 z-10 border-4  border-pink-100 object-contain	"/>
+						<div className="chat chat-start absolute left-72 top-12 overflow-visible z-30 min-w-full">
+						<div className="chat-bubble chat-bubble-primary min-w-full  ">Je peux vous chanter des chansons pour adoucir les moeurs, c'est mon côté sensible...</div>
+					</div>
+					</div>
 			</div>
-			<div className="carousel-item h-full">
-				<img src="src/images/avatars/pasteque.png" />
+			<div className="carousel-item bg-fuschia-100  mx-auto h-96  ">
+					<div className="relative min-w-96 h-96  " >
+						<img src="src/images/avatars/perseverance.png" className=" mx-auto my-auto absolute h-96  p-0 z-10 border-4  border-pink-100 object-contain	"/>
+						<div className="chat chat-start absolute left-72 top-12 overflow-visible z-30 min-w-full">
+						<div className="chat-bubble chat-bubble-primary min-w-full  ">Je suis un peu une acharnée, j'aime pas me laisser faire.</div>
+					</div>
+					</div>
 			</div>
-			<div className="carousel-item h-full">
-				<img src="src/images/avatars/velo.png" />
+			<div className="carousel-item bg-fuschia-100  mx-auto h-96  ">
+					<div className="relative min-w-96 h-96  " >
+						<img src="src/images/avatars/pasteque.png" className=" mx-auto my-auto absolute h-96  p-0 z-10 border-4  border-pink-100 object-contain	"/>
+						<div className="chat chat-start absolute left-72 top-12 overflow-visible z-30 min-w-full">
+						<div className="chat-bubble chat-bubble-primary min-w-full  "> Le gras, c'est la vie ! </div>
+					</div>
+					</div>
 			</div>
 		</div>
 
-		<button className="btn btn-primary animate-bounce animate-infinite animate-duration-[2000ms] animate-ease-in-out w-12 mx-auto">Contact me !</button>
+
+		<button className="text-lg btn btn-primary animate-bounce animate-infinite animate-duration-[2000ms] animate-ease-in-out w-36 mx-auto my-5 pb-2 ">Contact me !</button>
 
 		<div className="mockup-code max-w-64 self-center my-5 min-h-32">
 			<pre data-prefix="$"><code>npm i laure-seng-bundle</code></pre>
@@ -76,7 +102,12 @@ return (
 
 		<div className="flex content-center flex-row justify-around m-6 " id="projects-wrapper">
 			<article className="card w-96 bg-base-100 shadow-xl">
-				<figure><img src="https://picsum.photos/200/300" alt="Shoes" href="https://lorlor31.github.io/Memento/" /></figure>
+				<figure>
+					<a href="https://lorlor31.github.io/Memento/">
+						<img src="src/images/projets/memento.png" alt="photo_du_projet_memento"/>
+					</a>
+					
+				</figure>
 				<div className="card-body">
 					<h2 className="card-title">
 						<a href="https://lorlor31.github.io/Memento/">Memento</a>
@@ -92,7 +123,11 @@ return (
 			</article>
 
 			<article className="card w-96 bg-base-100 shadow-xl">
-				<figure><img src="https://picsum.photos/200/300" alt="Shoes" href="https://lorlor31.github.io/Advent-Calendar/" /></figure>
+				<figure>
+					<a href="https://lorlor31.github.io/Advent-Calendar/">
+						<img src="src/images/projets/advent_calendar.png" alt="photo_du_projet_calendrier_avent"/>
+					</a>
+				</figure>
 				<div className="card-body">
 					<h2 className="card-title">
 						<a href="https://lorlor31.github.io/Advent-Calendar/">Advent Calendar</a>

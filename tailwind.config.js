@@ -9,6 +9,16 @@ export default {
       backgroundImage: {
         'roues': "url('src/images/roues.svg')",
         'x': "url('/img/')",
+      },
+      animation: {
+        'translateX-slow': 'translateX 3s linear infinite',
+      },
+      keyframes: {
+        translateX: {
+          '0%': { transform: 'translateX(0%)' },
+          '50%': { transform: 'translateX(50%)' },
+          '100%': { transform: 'translateX(100%)' },
+        }
       }
 
     },
