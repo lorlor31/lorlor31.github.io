@@ -1,3 +1,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+@layer components {
+    .think-bubble {
+        /* background-color: red; */
+        position : relative ;
+        border-radius : 46% ;
+        border : solid 2px black ;
+        padding: 1.5rem 1.2rem;
+        background-color: #a600ff;
+        color : #d1f7ff;
+        top : 0px;
+    }
+    .think-bubble-baby-1{
+        /* background-color: red; */
+        position : absolute ;
+        border-radius : 100% ;
+        border : solid 2px rgb(0, 0, 0) ;
+        content : "" ;
+        width :5px;
+        height: 5px; 
+        left : 150px ;
+        top :120px;
+        z-index: 100;
+    }
+    .think-bubble-baby-2{
+        /* background-color: red; */
+        position : absolute ;
+        border-radius : 40% ;
+        border : solid 2px rgb(0, 0, 0) ;
+        content : "" ;
+        width :5px;
+        height: 5px; 
+        left : 160px ;
+        top :120px;
+    }
+    .think-bubble-baby-3{
+        /* background-color: red; */
+        position : absolute ;
+        border-radius : 40% ;
+        border : solid 2px rgb(0, 0, 0) ;
+        content : "" ;
+        width :5px;
+        height: 5px; 
+        left : 170px ;
+        top :120px;
+    }
+}
