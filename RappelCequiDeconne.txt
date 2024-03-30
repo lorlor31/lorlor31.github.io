@@ -1,0 +1,14 @@
+- avec cdn j'ai pas toutes les fctnalités
+avec postcss bloque j'ai pas le dossie node modules quie st apparu dc maarche pas
+avec vite + vanilla js j'ai pas da meme arborescence j'suis perdue
+avec React c ok j'ai installe daisi ui et animated tailwind
+
+Pb si c fait en react je peux plus le mettre sur github pages,
+il faut utiliser gh-pages
+l'installer
+i
+lancer le npm run build
+l faut mettre les miages ds le repertoire de buld donc dist(fr attention au chemin)
+lancer le deploiement avec la commande : gh-pages -d dist 
+ddeployer à partir du dossier où est le build càdire dist quand 'est un projet fait avec vite
+METTRE LES IMAGES DS dist/src/images avant de deployer

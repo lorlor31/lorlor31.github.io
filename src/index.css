@@ -2,51 +2,97 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @layer components {
+
+    /* Bulle de pensée à gauche */
     .think-bubble {
-        /* background-color: red; */
+        opacity: 0.01;        
         position : relative ;
-        border-radius : 46% ;
-        border : solid 2px black ;
+        border-radius : 42% ;
+        /* border : solid 2px black ; */
         padding: 1.5rem 1.2rem;
-        background-color: #a600ff;
-        color : #d1f7ff;
+        background-color: hsl(310, 70%, 57%);
+        color : #f5e2e2;
         top : 0px;
     }
+    .think-bubble:hover {
+        transition: all 800ms;
+        visibility: visible;
+        opacity: 1;    
+    }
+
+    /* Première petite bulle */
     .think-bubble-baby-1{
         /* background-color: red; */
         position : absolute ;
         border-radius : 100% ;
-        border : solid 2px rgb(0, 0, 0) ;
-        content : "" ;
-        width :5px;
-        height: 5px; 
-        left : 150px ;
-        top :120px;
-        z-index: 100;
-    }
-    .think-bubble-baby-2{
-        /* background-color: red; */
-        position : absolute ;
-        border-radius : 40% ;
-        border : solid 2px rgb(0, 0, 0) ;
-        content : "" ;
-        width :5px;
-        height: 5px; 
-        left : 160px ;
-        top :120px;
-    }
-    .think-bubble-baby-3{
-        /* background-color: red; */
-        position : absolute ;
-        border-radius : 40% ;
-        border : solid 2px rgb(0, 0, 0) ;
+        border : solid 2px rgb(254, 247, 247) ;
         content : "" ;
         width :5px;
         height: 5px; 
         left : 170px ;
+        top :88px;
+        z-index: 100;
+    }
+
+    /* Deuxième petite bulle */
+    .think-bubble-baby-2{
+        /* background-color: red; */
+        position : absolute ;
+        border-radius : 40% ;
+        border : solid 2px rgb(253, 255, 254) ;
+        content : "" ;
+        width :5px;
+        height: 5px; 
+        left : 200px ;
         top :120px;
     }
+/* ============== */
+    /* Bulle de pensée à droite */
+    /* .think-bubble-R {
+        opacity: 0.01;        
+        position : relative ;
+        border-radius : 42% ;
+        /* border : solid 2px black ;
+        padding: 1.5rem 1.2rem;
+        background-color: hsl(310, 70%, 57%);
+        color : #f5e2e2;
+        top : 0px;
+    }
+    .think-bubble-R:hover {
+        transition: all 800ms;
+        visibility: visible;
+        opacity: 1;    
+    } 
+ */
+    /* Première petite bulle */
+    .think-bubble-R-baby-1{
+        /* background-color: red; */
+        position : absolute ;
+        border-radius : 100% ;
+        border : solid 2px rgb(254, 247, 247) ;
+        content : "" ;
+        width :5px;
+        height: 5px; 
+        right : 250px ;
+        top :88px;
+        z-index: 100;
+    }
+
+    /* Deuxième petite bulle */
+    .think-bubble-R-baby-2{
+        /* background-color: red; */
+        position : absolute ;
+        border-radius : 40% ;
+        border : solid 2px rgb(253, 255, 254) ;
+        content : "" ;
+        width :5px;
+        height: 5px; 
+        right : 270px ;
+        top :100px;
+    }
+
+
+
+
 }

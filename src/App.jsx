@@ -2,10 +2,10 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './App.css'
+import React, { useEffect } from 'react';
 
 function App() {
-	// const [count, setCount] = useState(0)
-
+	
 return (
 <>
 {/* container global */}
@@ -26,23 +26,21 @@ return (
 {/* Faire le css sur la card 1 puis copier une fois ok */}
 <div className="h-96 min-w-full carousel carousel-vertical rounded-box my-0 max-w-3xl mx-auto">
 	{/* card1 */}
-	<div className="carousel-item bg-fuschia-100  mx-auto h-96  ">
+	<div className="carousel-item bg-fuschia-500  mx-auto h-96">
 		<div className="relative min-w-96 h-96  " >
 			<img src="src/images/avatars/internet.png" className=" mx-auto my-auto absolute h-96  p-0 z-10 border-4  border-pink-100 object-contain	"/>
-			<div className="chat chat-start absolute left-72 top-12 overflow-visible z-30 min-w-full">
-				<div className="chat-bubble chat-bubble-primary min-w-[10dvw] max-w-[30dvw]  ">
+			{/* Bulle de droite */}
+			<div className="chat chat-start absolute left-72 top-12 overflow-visible z-30 min-w-full ">
+				<div className="chat-bubble chat-bubble-primary min-w-[10dvw] max-w-[20dvw]  text-gray-300 ">
 					<p className="text-center py-1 ">Bonjour ! Je suis Laure !</p>  
 					<p className="text-center py-1"> A votre service !</p>
 				</div>
 			</div>
+			{/* Bulle de pensée à gauche */}
 			<div className="chat chat-start absolute right-36 top-2 overflow-visible z-30 min-w-full">
-				<div className="think-bubble  min-w-[10dvw] max-w-[30dvw] absolute  ">
-					{/* //TODO copier le style de la chat bubble ds index.css */}
+				<div className="think-bubble  min-w-[10dvw] max-w-[20dvw] absolute  ">
 					<div className="think-bubble-baby-1 relative "></div>
 					<div className="think-bubble-baby-2"></div>
-
-					<div className="think-bubble-baby-3"></div>
-
 					<p className="text-center py-1 ">Hum toi t'es pas Laure !</p>  
 					<p className="text-center py-1"> T'es Internet...</p>
 				</div>
@@ -50,20 +48,42 @@ return (
 		</div>
 	</div>
 	{/* card 2*/}
-	<div className="carousel-item bg-fuschia-100  mx-auto h-96  ">
+	<div className="carousel-item bg-red-100  mx-auto h-96  ">
 			<div className="relative min-w-96 h-96  " >
 				<img src="src/images/avatars/laptop.png" className=" mx-auto my-auto absolute h-96  p-0 z-10 border-4  border-pink-100 object-contain	"/>
+				{/* Bulle de droite */}
 				<div className="chat chat-start absolute left-72 top-12 overflow-visible z-30 min-w-full">
-				<div className="chat-bubble chat-bubble-primary min-w-full  ">J'aime les ordinateurs, je ne sais pas si c'est réciproque...</div>
-			</div>
+					<div className="chat-bubble chat-bubble-primary min-w-[10dvw] max-w-[20dvw]  text-gray-300 ">J'aime les ordinateurs, je ne sais pas si c'est réciproque...
+					</div>
+				</div>
+				{/* Bulle de pensée à gauche */}
+				<div className="chat chat-start absolute right-36 top-10 overflow-visible z-30 min-w-full">
+					<div className="think-bubble  min-w-[10dvw] max-w-[20dvw] absolute  text-gray-300  ">
+						<div className="think-bubble-baby-1 relative "></div>
+						<div className="think-bubble-baby-2"></div>
+						<p className="text-center py-1 ">Je voudrais pas la vexer...</p>  
+						<p className="text-center py-1"> </p>
+					</div>
+				</div>
 			</div>
 	</div>
 	{/* card 3*/}
 	<div className="carousel-item bg-fuschia-100  mx-auto h-96  ">
 			<div className="relative min-w-96 h-96  " >
 				<img src="src/images/avatars/studying.png" className=" mx-auto my-auto absolute h-96  p-0 z-10 border-4  border-pink-100 object-contain	"/>
-				<div className="chat chat-start absolute left-72 top-12 overflow-visible z-30 min-w-full">
-				<div className="chat-bubble chat-bubble-primary min-w-full  ">Je suis quelqu'un de sérieux et de travailleur.</div>
+				{/* Bulle de droite */}
+				<div className="chat chat-end absolute right-72 top-12 overflow-visible z-30 min-w-full">
+				<div className="chat-bubble chat-bubble-primary min-w-[10dvw] max-w-[20dvw]  text-gray-300 ">Je suis quelqu'un de sérieux et de travailleur.
+				</div>
+				{/* Bulle de pensée à gauche */}
+				<div className="chat chat-start absolute left-[36rem]  bottom-24 overflow-visible z-30 min-w-full">
+					<div className="think-bubble  min-w-[10dvw] max-w-[20dvw] absolute  ">
+						<div className="think-bubble-R-baby-1"></div>
+						<div className="think-bubble-R-baby-2"></div>
+						<p className="text-center py-1 "> Faut qu'j'me tourne pour pas qu'on voit que j'rigole ...
+						</p>  
+					</div>
+				</div>
 			</div>
 			</div>
 	</div>
@@ -71,8 +91,9 @@ return (
 	<div className="carousel-item bg-fuschia-100  mx-auto h-96  ">
 			<div className="relative min-w-96 h-96  " >
 				<img src="src/images/avatars/trampoline.png" className=" mx-auto my-auto absolute h-96  p-0 z-10 border-4  border-pink-100 object-contain	"/>
+				{/* Bulle de droite */}
 				<div className="chat chat-start absolute left-72 top-12 overflow-visible z-30 min-w-full">
-				<div className="chat-bubble chat-bubble-primary min-w-full  ">Mais il parait que je saute comme une puce ?!</div>
+				<div className="chat-bubble chat-bubble-primary min-w-[10dvw] max-w-[20dvw]  text-gray-300 ">Mais il parait que je saute comme une puce ?!</div>
 			</div>
 			</div>
 	</div>
@@ -81,34 +102,37 @@ return (
 			<div className="relative min-w-96 h-96  " >
 				<img src="src/images/avatars/velo.png" className=" mx-auto my-auto absolute h-96  p-0 z-10 border-4  border-pink-100 object-contain	"/>
 				<div className="chat chat-start absolute left-72 top-12 overflow-visible z-30 min-w-full">
-				<div className="chat-bubble chat-bubble-primary min-w-full  ">J'adore mon vélo et le réparer.</div>
+				<div className="chat-bubble chat-bubble-primary min-w-[10dvw] max-w-[20dvw]  text-gray-300 ">J'adore mon vélo et le réparer.</div>
 			</div>
 			</div>
 	</div>
-			{/* <div className="carousel-item bg-fuschia-100  mx-auto h-96  ">
+			<div className="carousel-item bg-fuschia-100  mx-auto h-96  ">
 					<div className="relative min-w-96 h-96  " >
 						<img src="src/images/avatars/serenade.png" className=" mx-auto my-auto absolute h-96  p-0 z-10 border-4  border-pink-100 object-contain	"/>
+						{/* Bulle de droite */}
 						<div className="chat chat-start absolute left-72 top-12 overflow-visible z-30 min-w-full">
-						<div className="chat-bubble chat-bubble-primary min-w-full  ">Je peux vous chanter des chansons pour adoucir les moeurs, c'est mon côté sensible...</div>
+						<div className="chat-bubble chat-bubble-primary min-w-[10dvw] max-w-[20dvw]  text-gray-300 ">Je peux vous chanter des chansons pour adoucir les moeurs, c'est mon côté sensible...</div>
 					</div>
 					</div>
 			</div>
 			<div className="carousel-item bg-fuschia-100  mx-auto h-96  ">
 					<div className="relative min-w-96 h-96  " >
 						<img src="src/images/avatars/perseverance.png" className=" mx-auto my-auto absolute h-96  p-0 z-10 border-4  border-pink-100 object-contain	"/>
+						{/* Bulle de droite */}
 						<div className="chat chat-start absolute left-72 top-12 overflow-visible z-30 min-w-full">
-						<div className="chat-bubble chat-bubble-primary min-w-full  ">Je suis un peu une acharnée, j'aime pas me laisser faire.</div>
+						<div className="chat-bubble chat-bubble-primary min-w-[10dvw] max-w-[20dvw]  text-gray-300 ">Je suis un peu une acharnée, j'aime pas me laisser faire.</div>
 					</div>
 					</div>
 			</div>
 			<div className="carousel-item bg-fuschia-100  mx-auto h-96  ">
 					<div className="relative min-w-96 h-96  " >
 						<img src="src/images/avatars/pasteque.png" className=" mx-auto my-auto absolute h-96  p-0 z-10 border-4  border-pink-100 object-contain	"/>
+						{/* Bulle de droite */}
 						<div className="chat chat-start absolute left-72 top-12 overflow-visible z-30 min-w-full">
-						<div className="chat-bubble chat-bubble-primary min-w-full  "> Le gras, c'est la vie ! </div>
+						<div className="chat-bubble chat-bubble-primary min-w-[10dvw] max-w-[20dvw]  text-gray-300 "> Le gras, c'est la vie ! </div>
 					</div>
 					</div>
-			</div> */}
+			</div> 
 </div>
 {/* <!-- Fin du Carousel --> */}
 
@@ -123,7 +147,7 @@ return (
 {/* sm md lg xl 2xl */}
 {/* Wrapper des cards */}
 		<div className="flex content-center 
-		lg:flex-row sm:flex-col  
+		sm:flex-col md:flex-row lg:flex-row xl:flex-row 
 		justify-center items-center m-6 " 
 		id="projects-wrapper">
 			<article className="card w-96 bg-base-100 shadow-xl mx-5 sm:my-5">
@@ -133,7 +157,7 @@ return (
 					</a>
 					
 				</figure>
-				<div className="card-body">
+				<div className="card-body bg-purple-50">
 					<h2 className="card-title">
 						<a href="https://lorlor31.github.io/Memento/">Memento</a>
 						<div className="badge badge-success text-neutral-content">NEW</div>
@@ -153,7 +177,7 @@ return (
 						<img src="src/images/projets/advent_calendar.png" alt="photo_du_projet_calendrier_avent"/>
 					</a>
 				</figure>
-				<div className="card-body">
+				<div className="card-body bg-purple-50">
 					<h2 className="card-title">
 						<a href="https://lorlor31.github.io/Advent-Calendar/">Advent Calendar</a>
 						<div className="badge badge-success text-neutral-content">OLD</div>
