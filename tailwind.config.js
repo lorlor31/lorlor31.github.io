@@ -8,6 +8,7 @@ export default {
     extend: {
       backgroundImage: {
         'roues': "url('src/images/roues.svg')",
+        'constr': "url('src/images/site_en_construction.png')",
         'x': "url('/img/')",
       },
       animation: {

@@ -2,6 +2,7 @@
 //puis appliquer les tailles d'écrans selon les cas sm md lg xl 2xl
 import React, { useEffect } from 'react';
 import Project from './Project';
+import CarrouselCard from './CarrouselCard';
 
 function App() {
 	
@@ -12,7 +13,7 @@ return (
 min-h-screen max-w-screen card 
 bg-gradient-to-bl from-fuchsia-100 via-violet-200 via-20% to-pink-300 text-black ">
 {/* <!-- //header --> */}
-<div className="hero ">
+<div className="hero">
 	<div className="hero-content text-center z-5">
 		<div className="relative max-w-md mix-blend-darken   ">
 			<h1 className="bg-gradient-to-br from-indigo-600 from-0% via-fuchsia-400 via-15% to-blue-900 inline-block text-transparent bg-clip-text text-7xl font-bold bg-transparent z-40 bg-svg-wheels bg-no-repeat bg-cover bg-center bg-fixed min-h-100 animate-fade-right animate-once animate-duration-500 animate-ease-in-out shadow-sm drop-shadow-2xl p-4 ">	Laure Seng
@@ -28,31 +29,19 @@ bg-gradient-to-bl from-fuchsia-100 via-violet-200 via-20% to-pink-300 text-black
 
 {/* Faire le css sur la card 1 puis copier une fois ok */}
 {/* //pb comment fr pour que le wrapper soit plus grand que la bulle  */}
-<div className="min-h-screen carousel carousel-vertical rounded-box my-0 mx-auto min-w-80 max-w-screen ">
+<div className="max-h-screen carousel carousel-vertical my-0 mx-auto bg-constr">
 	{/* card1 */}
-	<div className="carousel-item bg-fuschia-500 h-96 mx-auto min-w-96  max-w-screen">
-		<div className=" relative min-w-80 h-96 mx-auto max-w-screen " >
-			<img src="src/images/avatars/internet.png" 
-			className="min-w-32 my-auto  mx-auto absolute h-96  p-0 z-10 border-4 
-			 border-pink-100 object-contain	"/>
-			{/* Bulle de droite */}
-			<div className=" mx-auto chat chat-start absolute left-[80%] bottom-[80%] overflow-visible z-30 min-w-full ">
-				<div className="chat-bubble chat-bubble-primary min-w-[10dvw] max-w-[20dvw]  text-gray-300 ">
-					<p className="text-center py-1 ">Bonjour ! Je suis Laure !</p>  
-					<p className="text-center py-1"> A votre service !</p>
-				</div>
-			</div>
-			{/* Bulle de pensée à gauche */}
-			{/* <div className="max-w-[80dvw] chat chat-start absolute right-36 top-2 overflow-visible z-30 min-w-full">
-				<div className="think-bubble  min-w-[10dvw] max-w-[20dvw] absolute  ">
-					<div className="think-bubble-baby-1 relative "></div>
-					<div className="think-bubble-baby-2"></div>
-					<p className="text-center py-1 ">Hum toi t'es pas Laure !</p>  
-					<p className="text-center py-1"> T'es Internet...</p>
-				</div>
-			</div> */}
-		</div>
-	</div>
+	
+<CarrouselCard card={{
+    "img": "src/images/avatars/internet.png",
+	"alt": "avatar_internet",
+    "mainBubbleText1": "Bonjour ! Je suis Laure !",
+    "mainBubbleText2": "A votre service !",
+    "thinkBubbleText1": "Hum toi t'es pas Laure !",
+    "thinkBubbleText2": "T'es Internet...",
+    "thinkBubbleBaby1": "think-bubble-baby-1",
+    "thinkBubbleBaby2": "think-bubble-baby-2"       
+}}/>
 
 </div>
 {/* <!-- Fin du Carousel --> */}
@@ -68,20 +57,24 @@ bg-gradient-to-bl from-fuchsia-100 via-violet-200 via-20% to-pink-300 text-black
 {/* sm md lg xl 2xl */}
 {/* Wrapper des cards */}
 
-		<div className="flex content-between justify-between p-5 m-5
-		sm:flex-col 
-		md:flex-col 
-		lg:flex-row 
-		xl:flex-row 
-		"
-		id="projects-wrapper">
+<div className="flex content-between justify-between p-5 
+flex-col mx-auto
+sm:flex-col sm:mx-auto 
+md:flex-col md:mx-5
+lg:flex-row lg:mx-5
+xl:flex-row xl:mx-5
+2xl:flex-row 2xl:mx-5
+"
+id="projects-wrapper">
 			
 		<Project project={{
 			"url" : "https://lorlor31.github.io/Memento/",
 			"img" : "src/images/projets/memento.png",
 			"alt" : "capture_du_projet_memento",
 			"title" : "Memento",
-			"desc" : "Tous les trucs dont je dois me rappeler 🤯"
+			"desc" : "Tous les trucs dont je dois me rappeler 🤯",
+			"titleBadges": ["OLD", "WIP"],
+			"techBadges": ["HTML", "CSS", "JS"],
 		}}/>
 
 		<Project project={{
@@ -89,7 +82,9 @@ bg-gradient-to-bl from-fuchsia-100 via-violet-200 via-20% to-pink-300 text-black
 			"img" : "src/images/projets/advent_calendar.png",
 			"alt" : "photo_du_projet_calendrier_avent",
 			"title" : "Advent Calendar",
-			"desc" : "Apprennez et riez autour de Noël !"
+			"desc" : "Apprennez et riez autour de Noël !",
+			"titleBadges": ["OLD"],
+			"techBadges": ["HTML", "CSS", "JS"]
 		}}/>
 
 		<Project project={{
@@ -97,7 +92,9 @@ bg-gradient-to-bl from-fuchsia-100 via-violet-200 via-20% to-pink-300 text-black
 			"img" : "src/images/projets/obroderie.png",
 			"alt" : "photo_du_projet_obroderie",
 			"title" : "Obroderie",
-			"desc" : "Logiciel type ERP"	
+			"desc" : "Logiciel type ERP pour une PME de broderie",
+			"titleBadges": ["NEW", "WIP"],
+			"techBadges": ["Symfony", "React"]	
 		}}/>
 
 	</div>
