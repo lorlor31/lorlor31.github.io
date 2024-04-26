@@ -1,7 +1,6 @@
 //MOBILEFIRST : regler les tailles d'abord pour mobile
 //puis appliquer les tailles d'écrans selon les cas sm md lg xl 2xl
 import React, { useEffect } from 'react';
-import Project from './Project';
 
 function App() {
 	
@@ -67,7 +66,16 @@ bg-gradient-to-bl from-fuchsia-100 via-violet-200 via-20% to-pink-300 text-black
 
 {/* sm md lg xl 2xl */}
 {/* Wrapper des cards */}
-
+{/* Badges bg colors available = 
+primary, html
+ secondary, css
+  accent, js
+  success new, 
+  warning WIP en construction,
+   error, 
+   info old , 
+   neutral 
+   */}
 		<div className="flex content-between justify-between p-5 m-5
 		sm:flex-col 
 		md:flex-col 
@@ -75,36 +83,87 @@ bg-gradient-to-bl from-fuchsia-100 via-violet-200 via-20% to-pink-300 text-black
 		xl:flex-row 
 		"
 		id="projects-wrapper">
-			
-		<Project project={{
-			"url" : "https://lorlor31.github.io/Memento/",
-			"img" : "src/images/projets/memento.png",
-			"alt" : "capture_du_projet_memento",
-			"title" : "Memento",
-			"desc" : "Tous les trucs dont je dois me rappeler 🤯"
-		}}/>
+			<article className="card w-[80dvw] bg-base-100 shadow-xl my-5
+			sm:mx-auto
+			md:mx-5  
+			lg:mx-5 
+			xl:mx-5 
+			">
+				<figure className='mx-auto min-h-[60dvh] '>
+					<a href="https://lorlor31.github.io/Memento/" className='mx-auto'>
+						<img src="src/images/projets/memento.png" alt="capture_du_projet_memento" className='mx-auto' />
+					</a>
+				</figure>
+				<div className="card-body bg-purple-50 ">
+					<h2 className="card-title">
+						<a href="https://lorlor31.github.io/Memento/">Memento</a>
+						<div className="badge badge-warning text-neutral-content">WIP</div>
+					</h2>
+					<p>Tous les trucs dont je dois me rappeler 🤯</p>
+					<div className="card-actions justify-end">
+						<div className="badge badge-outline bg-primary">HTML</div>
+						<div className="badge badge-outline  bg-secondary">CSS</div>
+						<div className="badge badge-outline  bg-accent">JS</div>
+					</div>
+				</div>
+			</article>
 
-		<Project project={{
-			"url" : "https://lorlor31.github.io/Advent-Calendar/",
-			"img" : "src/images/projets/advent_calendar.png",
-			"alt" : "photo_du_projet_calendrier_avent",
-			"title" : "Advent Calendar",
-			"desc" : "Apprennez et riez autour de Noël !"
-		}}/>
+<article className="card w-[80dvw] bg-base-100 shadow-xl my-5
+			sm:mx-auto
+			md:mx-5  
+			lg:mx-5 
+			xl:mx-5 
+			">				
+				<figure className='mx-auto h-100 '>
+					<a href="https://lorlor31.github.io/Advent-Calendar/">
+						<img src="src/images/projets/advent_calendar.png" alt="photo_du_projet_calendrier_avent"/>
+					</a>
+				</figure>
+				<div className="card-body bg-purple-50 ">
+					<h2 className="card-title">
+						<a href="https://lorlor31.github.io/Advent-Calendar/">Advent Calendar</a>
+						<div className="badge badge-success text-neutral-content">OLD</div>
+					</h2>
+					<p>Apprennez et riez autour de Noël</p>
+					<div className="card-actions justify-end">
+						<div className="badge badge-outline bg-primary">HTML</div>
+						<div className="badge badge-outline  bg-secondary">CSS</div>
+						<div className="badge badge-outline  bg-accent">JS</div>
+					</div>
+				</div>
+			</article>
 
-		<Project project={{
-			"url" : "http://obroderie.lorlor.site",
-			"img" : "src/images/projets/obroderie.png",
-			"alt" : "photo_du_projet_obroderie",
-			"title" : "Obroderie",
-			"desc" : "Logiciel type ERP"	
-		}}/>
-
-	</div>
+<article className="card w-[80dvw] bg-base-100 shadow-xl my-5
+			sm:mx-auto
+			md:mx-5  
+			lg:mx-5 
+			xl:mx-5 
+			">				
+				<figure className='mx-auto h-100 '>
+					<a href="http://obroderie.lorlor.site">
+						<img src="src/images/projets/obroderie.png" alt="photo_du_projet_obroderie"/>
+					</a>
+				</figure>
+				<div className="card-body bg-purple-50 ">
+					<h2 className="card-title">
+						<a href="https://lorlor31.github.io/Advent-Calendar/">Obroderie</a>
+						<div className="badge badge-success text-neutral-content">NEW</div>
+					</h2>
+					<p> Logiciel type ERP</p>
+					<div className="card-actions justify-end">
+						<div className="badge badge-outline bg-primary">HTML</div>
+						<div className="badge badge-outline  bg-secondary">CSS</div>
+						<div className="badge badge-outline  bg-accent">JS</div>
+					</div>
+				</div>
+			</article>
+		</div>
 {/* Fin du Wrapper des cards */}
 
-</div>
+		</div>
 
+
+	
 </>
 )
 }
