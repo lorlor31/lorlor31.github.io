@@ -23,30 +23,97 @@ bg-gradient-to-bl from-fuchsia-100 via-violet-200 via-20% to-pink-300 text-black
 		</div>
 	</div>
 </div>
-{/* <!-- //Carousel --> */}
+
 {/* //TODO mettre des props pour factoriser */}
 {/* //TODO voir pour mettre la bulle attachée aux petites quelle propriété css */}
 
 {/* Faire le css sur la card 1 puis copier une fois ok */}
 {/* //pb comment fr pour que le wrapper soit plus grand que la bulle  */}
-<div className="max-h-screen carousel carousel-vertical my-0 mx-auto bg-constr">
-	{/* card1 */}
-	
-<CarrouselCard card={{
-    "img": "src/images/avatars/internet.png",
-	"alt": "avatar_internet",
-    "mainBubbleText1": "Bonjour ! Je suis Laure !",
-    "mainBubbleText2": "A votre service !",
-    "thinkBubbleText1": "Hum toi t'es pas Laure !",
-    "thinkBubbleText2": "T'es Internet...",
-    "thinkBubbleBaby1": "think-bubble-baby-1",
-    "thinkBubbleBaby2": "think-bubble-baby-2"       
-}}/>
+
+{/* carrousel */}
+<div className="h-[50dvh] sm:h-[60dvh] md:h-[60dvh] lg:h-[60dvh] xl:h-[60dvh] 2xl:h-[60dvh] 
+carousel carousel-vertical my-0 mx-auto ">	
+{/* bg-constr  => pour mettre en bckground l'image */}
+
+	<CarrouselCard card={{
+		"img": "src/images/avatars/internet.png",
+		"alt": "avatar_internet",
+		"mainBubbleText1": "Bonjour ! Je suis Laure !",
+		"mainBubbleText2": "A votre service !",
+		"thinkBubbleText1": "Hum toi t'es pas Laure !",
+		"thinkBubbleText2": "T'es Internet...",
+		"thinkBubbleBaby1": "think-bubble-baby-1",
+		"thinkBubbleBaby2": "think-bubble-baby-2"       
+	}}/>
+
+	<CarrouselCard card={{
+		"img": "src/images/avatars/laptop.png",
+		"alt": "avatar_laptop",
+		"mainBubbleText1": "J'aime les ordinateurs, je ne sais pas si c'est réciproque...",
+		"thinkBubbleText1": "Je voudrais pas la vexer...",
+		"thinkBubbleText2": "T'es Internet...",
+		"thinkBubbleBaby1": "think-bubble-baby-1",
+		"thinkBubbleBaby2": "think-bubble-baby-2"       
+	}}/>
+
+	<CarrouselCard card={{
+		"img": "src/images/avatars/studying.png",
+		"alt": "avatar_studying",
+		"mainBubbleText1": "Je suis quelqu'un de sérieux et de travailleur.",
+		"thinkBubbleText1": "Faut qu'j'me tourne pour pas qu'on voit que j'rigole ...",
+		"thinkBubbleText2": "T'es Internet...",
+		"thinkBubbleBaby1": "think-bubble-baby-1",
+		"thinkBubbleBaby2": "think-bubble-baby-2"       
+	}}/>
+
+	<CarrouselCard card={{
+		"img": "src/images/avatars/velo.png",
+		"alt": "avatar_velo",
+		"mainBubbleText1": "J'aime faire du vélo et le réparer.",
+		"thinkBubbleText1": "Doucement quand même hein !",
+		"thinkBubbleText2": "T'es Internet...",
+		"thinkBubbleBaby1": "think-bubble-baby-1",
+		"thinkBubbleBaby2": "think-bubble-baby-2"       
+	}}/>
+
+	<CarrouselCard card={{
+			"img": "src/images/avatars/serenade.png",
+			"alt": "avatar_serenade",
+			"mainBubbleText1": "Je peux chanter des chansons pour adoucir les moeurs...",
+			"thinkBubbleText1": "Nirvana ? ça adoucit les moeurs ??",
+			"thinkBubbleText2": "T'es Internet...",
+			"thinkBubbleBaby1": "think-bubble-baby-1",
+			"thinkBubbleBaby2": "think-bubble-baby-2"       
+	}}/>
+
+	<CarrouselCard card={{
+			"img": "src/images/avatars/perseverance.png",
+			"alt": "avatar_perseverance",
+			"mainBubbleText1": "Je suis un peu une acharnée, j'aime pas me laisser faire.",
+			"thinkBubbleText1": "Surtout par cet énorme bug !",
+			"thinkBubbleText2": "T'es Internet...",
+			"thinkBubbleBaby1": "think-bubble-baby-1",
+			"thinkBubbleBaby2": "think-bubble-baby-2"       
+	}}/>
+
+	<CarrouselCard card={{
+			"img": "src/images/avatars/pasteque.png",
+			"alt": "avatar_pasteque",
+			"mainBubbleText1": "Le gras, c'est la vie ! ",
+			"thinkBubbleText1": "Y a le smile aussi",
+			"thinkBubbleText2": "T'es Internet...",
+			"thinkBubbleBaby1": "think-bubble-baby-1",
+			"thinkBubbleBaby2": "think-bubble-baby-2"       
+	}}/>
 
 </div>
-{/* <!-- Fin du Carousel --> */}
+{/* end of carrousel */}
 
-		<button className="max-w-[80dvw] text-lg btn btn-primary animate-bounce animate-infinite animate-duration-[2000ms] animate-ease-in-out w-36 mx-auto my-5 pb-2 ">Contact me !</button>
+<a className="mx-auto" href="https://www.linkedin.com/in/laure-seng/">
+	<button className="max-w-[80dvw] text-lg btn btn-primary animate-bounce animate-infinite animate-duration-[2000ms] animate-ease-in-out w-36 mx-auto my-5 pb-2 ">
+		Contact me !
+	</button>
+</a>
 
 		<div className="mockup-code max-w-[80dvw]  self-center my-5 min-h-32">
 			<pre data-prefix="$"><code>npm i laure-seng-bundle</code></pre>
@@ -78,6 +145,16 @@ id="projects-wrapper">
 		}}/>
 
 		<Project project={{
+			"url" : "http://obroderie.lorlor.site",
+			"img" : "src/images/projets/obroderie.png",
+			"alt" : "photo_du_projet_obroderie",
+			"title" : "Obroderie",
+			"desc" : "Logiciel type ERP pour une PME de broderie",
+			"titleBadges": ["NEW", "WIP"],
+			"techBadges": ["Symfony", "React"]	
+		}}/>
+
+		<Project project={{
 			"url" : "https://lorlor31.github.io/Advent-Calendar/",
 			"img" : "src/images/projets/advent_calendar.png",
 			"alt" : "photo_du_projet_calendrier_avent",
@@ -87,15 +164,6 @@ id="projects-wrapper">
 			"techBadges": ["HTML", "CSS", "JS"]
 		}}/>
 
-		<Project project={{
-			"url" : "http://obroderie.lorlor.site",
-			"img" : "src/images/projets/obroderie.png",
-			"alt" : "photo_du_projet_obroderie",
-			"title" : "Obroderie",
-			"desc" : "Logiciel type ERP pour une PME de broderie",
-			"titleBadges": ["NEW", "WIP"],
-			"techBadges": ["Symfony", "React"]	
-		}}/>
 
 	</div>
 {/* Fin du Wrapper des cards */}

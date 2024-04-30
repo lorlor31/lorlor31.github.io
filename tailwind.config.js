@@ -20,8 +20,10 @@ export default {
           '50%': { transform: 'translateX(50%)' },
           '100%': { transform: 'translateX(100%)' },
         }
+      },
+      colors : {
+        bubbleBlue: '#4A00FF',
       }
-
     },
   },
   plugins: [require("daisyui"),
