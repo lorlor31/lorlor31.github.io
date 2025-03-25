@@ -54,7 +54,7 @@ En bas de la card
         {project.techBadges.map((badge) => 
             {
                 if (badge === "HTML") {
-                    return <div key={badge} className="badge badge-outline bg-secondary">{badge}</div>;
+                    return <div key={badge} className="badge badge-outline bg-secondary text-secondary-foreground">{badge}</div>;
                 } 
                 else if (badge === "CSS") {
                     return <div key={badge} className="badge badge-outline bg-primary">{badge}</div>;

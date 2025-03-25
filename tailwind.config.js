@@ -23,7 +23,10 @@ export default {
       },
       colors : {
         bubbleBlue: '#4A00FF',
-      }
+      },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+      },
     },
   },
   plugins: [require("daisyui"),

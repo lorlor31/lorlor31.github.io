@@ -10,9 +10,9 @@ pn qd c e petit ecran , la hauteur est trop grande... */}
 
 {/*paddings responsive ms peut etre pas utilies car pt-1 pb-1 sm:pt-20 md:pt-20 lg:pt-20 xl:pt-20 2xl:pt-20  */}
 <div className="
-h-[50dvh] sm:h-[60dvh] md:h-[60dvh] lg:h-[60dvh] xl:h-[60dvh] 2xl:h-[60dvh] 
+h-[50dvh] sm:h-[35dvh] md:h-[45dvh] lg:h-[60dvh] xl:h-[60dvh] 2xl:h-[60dvh] 
 carousel-item bg-fuschia-500 mx-auto min-w-[80dvw] max-w-full overflow-visible">
-    <div className="relative mx-auto w-[50dvw] overflow-visible h-[50dvh] sm:h-[60dvh] md:h-[60dvh] lg:h-[60dvh] xl:h-[60dvh] 2xl:h-[60dvh] 
+    <div className="relative mx-auto w-[50dvw] overflow-visible sm:h-[40dvh] md:h-[40dvh] lg:h-[40dvh] xl:h-[60dvh] 2xl:h-[60dvh] 
 " >
         <img src={card.img} alt={card.alt}  
         className="w-auto mt-10 mb-5 mx-auto relative p-0 z-0 border-4 

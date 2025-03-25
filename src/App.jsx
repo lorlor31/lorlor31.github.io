@@ -3,6 +3,7 @@
 import React, { useEffect } from 'react';
 import Project from './Project';
 import CarrouselCard from './CarrouselCard';
+import NavBar from './NavBar';
 
 function App() {
 	
@@ -13,6 +14,7 @@ return (
 min-h-screen max-w-screen card 
 bg-gradient-to-bl from-fuchsia-100 via-violet-200 via-20% to-pink-300 text-black ">
 {/* <!-- //header --> */}
+<NavBar/>
 <div className="hero">
 	<div className="hero-content text-center z-5">
 		<div className="relative max-w-md mix-blend-darken   ">
@@ -31,7 +33,7 @@ bg-gradient-to-bl from-fuchsia-100 via-violet-200 via-20% to-pink-300 text-black
 {/* //pb comment fr pour que le wrapper soit plus grand que la bulle  */}
 
 {/* carrousel */}
-<div className="h-[50dvh] sm:h-[60dvh] md:h-[60dvh] lg:h-[60dvh] xl:h-[60dvh] 2xl:h-[60dvh] 
+<div className="h-[50dvh] sm:h-[35dvh] md:h-[45dvh] lg:h-[60dvh] xl:h-[60dvh] 2xl:h-[60dvh] 
 carousel carousel-vertical my-0 mx-auto ">	
 {/* bg-constr  => pour mettre en bckground l'image */}
 
