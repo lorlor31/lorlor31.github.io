@@ -6,7 +6,8 @@ avec React c ok j'ai installe daisi ui et animated tailwind
 Pb si c fait en react je peux plus le mettre sur github pages,
 il faut utiliser gh-pages
 l'installer
-i
+npm install gh-pages --save-dev
+
 lancer le npm run build
 l faut mettre les miages ds le repertoire de buld donc dist(fr attention au chemin)
 lancer le deploiement avec la commande : gh-pages -d dist 
